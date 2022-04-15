@@ -4,13 +4,14 @@ export default function MemoriesForm() {
   return (
     <div className="memories-form">
       <input
-        className="memories-name"
+        className="memories-form-name"
         type="text"
         value=""
         placeholder="Name"
       />
       <input
-        className="memories-text"
+        className="memories-form-text"
+        id="MemoryFormText"
         placeholder="Please share a memory from this date!"
         type="text"
         value=""

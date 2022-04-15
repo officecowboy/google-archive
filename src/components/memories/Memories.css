@@ -1,7 +1,83 @@
 .memories {
-  border-top: solid 2px dimgray;
-  border-right: solid 2px dimgray;
-  height: 100%;
+  border-top: solid 2px #CCCCCC;
+  border-right: solid 2px #CCCCCC;
+  height: 85vh;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.memories-feed {
+  max-width: 500px;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.memories-form {
+  max-width: 360px;
   padding: 0 10px;
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  height: 300px;
+}
+
+.button {
+  width: 100px;
+}
+
+.memories-list {
+  padding: 0 10px;
+}
+
+.banner {
+  background-color: #CCCCCC;
+  padding: 3px 10px;
+}
+
+.memory-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 1px #CCCCCC;
+  border-top: solid 1px #CCCCCC;
+  color: dimgray;
+  margin-bottom: 20px;
+}
+
+.memory-info>p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.memory-text {
+  border-top: solid 1px #CCCCCC;
+  padding: 15px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.memories-form-name,
+.memories-form-text {
+  background: #FFFFFF;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: dimgrey;
+  border-top-color: dimgrey;
+  border-bottom-color: #D7D0C8;
+  border-right-color: #D7D0C8;
+  box-sizing: border-box;
+}
+
+.memories-form-name {
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+.memories-form-text {
+  max-width: 400px;
+  height: 200px;
+  margin-bottom: 15px;
 }

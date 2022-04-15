@@ -8,6 +8,10 @@ export default function Articles() {
     <div className="articles">
       <Results />
       <Article />
+      <Article />
+      <Article />
+      <Article />
+      <Article />
     </div>
   )
 }

@@ -7,6 +7,8 @@ export default function MemoriesFeed() {
       <div className="banner">Memories</div>
       <div className="memories-list">
         <Memory />
+        <Memory />
+        <Memory />
       </div>
     </div>
   )
