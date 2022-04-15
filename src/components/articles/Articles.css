@@ -1,0 +1,45 @@
+.articles {
+  padding-left: 20px;
+}
+
+.article>p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #E6F0F9;
+  padding: 3px 10px;
+  border-top: solid 2px #3366CC;
+}
+
+.article {
+  padding-right: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.article {
+  margin: 20px 0;
+}
+
+.headline {
+  color: #0000CC;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.link {
+  color: #008000;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #008000;
+  text-decoration: underline;
+}

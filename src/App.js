@@ -1,16 +1,16 @@
 import './App.css';
-import Header from './components/header/header';
-import Results from './components/results';
-import Articles from './components/articles';
-import Memories from './components/memories';
+import Header from './components/header/Header';
+import Articles from './components/articles/Articles';
+import Memories from './components/memories/Memories';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Results />
-      <Memories />
-      <Articles />
+      <div className="main-content">
+        <Memories />
+        <Articles />
+      </div>
     </div>
   );
 }

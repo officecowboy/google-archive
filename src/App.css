@@ -1,5 +1,63 @@
 .App {
-  background-color: grey;
+  background-color: white;
   width: 100vw;
   height: 100vh;
+}
+
+p {
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+}
+
+.logo {
+  max-width: 500px;
+  height: 15vh;
+  width: 100%;
+  color: grey;
+}
+
+.logo-image {
+  max-width: 300px;
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.search-bar {
+  padding: 5px;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  background: #FFFFFF;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: dimgrey;
+  border-top-color: dimgrey;
+  border-bottom-color: #D7D0C8;
+  border-right-color: #D7D0C8;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 5px 10px;
+  background-color: darkgrey;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: rgb(215, 215, 215);
+  border-top-color: rgb(215, 215, 215);
+  border-bottom-color: dimgrey;
+  border-right-color: dimgrey;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
 }
