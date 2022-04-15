@@ -1,7 +1,7 @@
 import './App.css';
-import Header from './components/header/Header';
-import Articles from './components/articles/Articles';
-import Memories from './components/memories/Memories';
+import Header from 'src/components/header/Header';
+import Articles from 'src/components/articles/Articles';
+import Memories from 'src/components/memories/Memories';
 
 function App() {
   return (
