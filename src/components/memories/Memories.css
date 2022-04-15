@@ -1,0 +1,7 @@
+.memories {
+  border-top: solid 2px dimgray;
+  border-right: solid 2px dimgray;
+  height: 100%;
+  padding: 0 10px;
+  max-width: 800px;
+}

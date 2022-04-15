@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from './logo';
-import Search from './search';
+import Logo from './Logo';
+import Search from './Search';
 
 export default function Header() {
   return (

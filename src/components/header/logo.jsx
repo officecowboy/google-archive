@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Logo() {
   return (
-    <div>
-      <img className="logo" alt="" src="src/assets/logos/GoogleLogo2000to5-5-2010.png"></img>
+    <div className="logo">
+      <img className="logo-image" alt="" src={require("../../assets/logos/GoogleLogo2000to5-5-2010.png")}></img>
     </div>
   )
 }

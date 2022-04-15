@@ -1,0 +1,16 @@
+.articles {
+  padding-left: 20px;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #E6F0F9;
+  padding: 3px 10px;
+  border-top: solid 2px #3366CC;
+}
+
+.article {
+  padding-right: 30px;
+}
