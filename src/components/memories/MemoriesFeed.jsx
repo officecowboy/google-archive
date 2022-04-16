@@ -9,6 +9,9 @@ export default function MemoriesFeed() {
         <Memory />
         <Memory />
         <Memory />
+        <Memory />
+        <Memory />
+        <Memory />
       </div>
     </div>
   )

@@ -2,6 +2,7 @@
   background-color: white;
   width: 100vw;
   height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -18,7 +19,6 @@ p {
 
 .logo {
   max-width: 500px;
-  height: 15vh;
   width: 100%;
   color: grey;
 }
@@ -33,7 +33,6 @@ p {
   padding: 5px;
   width: 300px;
   margin-left: 20px;
-  margin-bottom: 10px;
   margin-right: 5px;
   background: #FFFFFF;
   border-style: solid;

@@ -10,9 +10,14 @@ export default function Memory() {
         <p className="memory-name">
           Posted by Scott Diekema
         </p>
-        <p className="memory-time">
-          Last updated 04-15-2022
-        </p>
+        <div className="memory-crud">
+          <p>
+            Update
+          </p>
+          <p>
+            Delete
+          </p>
+        </div>
       </div>
     </div>
   )
