@@ -6,8 +6,11 @@ import './Memories.css';
 export default function Memories() {
   return (
     <div className="memories">
-      <MemoriesFeed />
-      <MemoriesForm />
+      <div className="memories-form-container">
+        <MemoriesFeed />
+        <MemoriesForm />
+      </div>
+      <img alt="" className="memories-gif" src={require("../../assets/panasonic-1998.gif")}></img>
     </div>
   )
 }

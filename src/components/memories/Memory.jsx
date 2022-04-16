@@ -12,7 +12,7 @@ export default function Memory() {
         </p>
         <div className="memory-crud">
           <p>
-            Update
+            Edit
           </p>
           <p>
             Delete

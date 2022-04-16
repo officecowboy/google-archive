@@ -5,8 +5,11 @@ import Search from './Search';
 export default function Header() {
   return (
     <div className="header">
-      <Logo />
-      <Search />
+      <div className="logo-search">
+        <Logo />
+        <Search />
+      </div>
+      <img alt="" className="banner-gif" src={require("../../assets/mac-mall-1998.gif")}></img>
     </div>
   )
 }

@@ -15,7 +15,7 @@ export default function MemoriesForm() {
       <input
         className="memories-form-text"
         id="MemoryFormText"
-        placeholder="Please share a memory from this date!"
+        placeholder="Memory"
         type="text"
         value=""
       />
