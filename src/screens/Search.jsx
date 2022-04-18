@@ -6,9 +6,9 @@ import Memories from '../components/memories/Memories';
 function Search({ date, setDate }) {
   return (
     <div className="App">
-      <Header />
+      <Header date={date} setDate={setDate} />
       <div className="main-content">
-        <Memories />
+        <Memories date={date} />
         <Articles />
       </div>
     </div>
