@@ -9,7 +9,7 @@ export default function MemoriesForm() {
       <input
         className="memories-form-name"
         type="text"
-        value=""
+        defaultValue=""
         placeholder="Name"
       />
       <input
@@ -17,12 +17,12 @@ export default function MemoriesForm() {
         id="MemoryFormText"
         placeholder="Memory"
         type="text"
-        value=""
+        defaultValue=""
       />
       <input
         className="button"
         type="submit"
-        value="Submit"
+        defaultValue="Submit"
       />
     </div>
   )
