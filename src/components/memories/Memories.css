@@ -103,6 +103,10 @@
   color: white;
 }
 
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .memories-form-text {
   height: 100px;
   padding: 5px;
