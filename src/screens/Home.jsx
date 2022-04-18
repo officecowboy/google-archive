@@ -4,7 +4,7 @@ import SearchBar from '../components/header/SearchBar';
 import { useNavigate } from 'react-router-dom';
 
 
-export default function Home() {
+export default function Home({ date, setDate }) {
 
   let navigate = useNavigate()
 
@@ -19,7 +19,7 @@ export default function Home() {
       <div className="home-search">
         <Logo />
         <form onSubmit={handleSubmit}>
-          <SearchBar />
+          <SearchBar date={date} setDate={setDate} />
         </form>
       </div>
     </div>

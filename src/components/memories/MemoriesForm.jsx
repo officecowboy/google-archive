@@ -12,7 +12,7 @@ export default function MemoriesForm() {
         defaultValue=""
         placeholder="Name"
       />
-      <input
+      <textarea
         className="memories-form-text"
         id="MemoryFormText"
         placeholder="Memory"
