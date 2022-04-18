@@ -1,16 +1,15 @@
 import './App.css';
-import Header from './components/header/Header';
-import Articles from './components/articles/Articles';
-import Memories from './components/memories/Memories';
+import Home from './screens/Home';
+import Search from './screens/Search';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="main-content">
-        <Memories />
-        <Articles />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+      </Routes>
     </div>
   );
 }
