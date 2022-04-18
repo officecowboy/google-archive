@@ -2,14 +2,18 @@ import React from 'react';
 
 export default function SearchBar({ date, setDate }) {
 
+  function handleChange(e) {
+    setDate(e.target.value)
+  }
+
   return (
     <div className="search">
       <input
         className="search-bar"
         type="text"
         value={date}
-        onChange={(e) => setDate(e.target.value)}
-        placeholder="Enter Date (YYYY-MM-DD)"
+        onChange={handleChange}
+        placeholder="Enter Date (MM-DD-YYYY)"
       />
       <input
         className="button"

@@ -10,6 +10,7 @@ export default function Home({ date, setDate }) {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
+
     await
       navigate("/search", { replace: true })
   }
