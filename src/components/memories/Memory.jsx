@@ -1,20 +1,22 @@
 import React from 'react';
+import { deleteMemory, getMemory, updateMemory } from '../../services/memories';
 
-export default function Memory() {
+export default function Memory({ memory }) {
+
   return (
     <div className="memory">
-      <p className="memory-text">
-        Here is a sample memory that I had on this day in this year about the technology of the time.
-      </p>
+      <p className="memory-text">{memory.text}</p>
       <div className="memory-info">
         <p className="memory-name">
-          Posted by Scott Diekema
+          Posted by {memory.name}
         </p>
         <div className="memory-crud">
-          <p>
-            Edit
-          </p>
-          <p>
+          <p onClick={() => {
+            updateMemory(memory._id)
+          }}>Edit</p>
+          <p onClick={() => {
+            deleteMemory(memory._id)
+          }}>
             Delete
           </p>
         </div>

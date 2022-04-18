@@ -1,49 +1,59 @@
-import React from 'react';
-import { useState } from 'react';
-import { createMemory } from '../../services/memories'
 
+import { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom'
+import { updateMemory, getMemory } from "../../services/memories"
 
-export default function MemoriesForm() {
+export default function MemoryEdit() {
   const [memory, setMemory] = useState({
+    _id: "",
     name: "",
     text: "",
+    createdAt: "",
+    updatedAt: "",
   })
+
+  const { id } = useParams()
+
+  useEffect(() => {
+    const fetchMemory = async () => {
+      let aMemory = await getMemory(id)
+      setMemory(aMemory)
+    }
+    fetchMemory()
+  }, [id])
 
   const handleChange = (event) => {
     const { name, value } = event.target
     setMemory({
       ...memory,
-      [name]: value
+      [name]: value,
     })
   }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    // setMemory(event.target.value)
-    const response = await createMemory(memory)
+    await updateMemory(id, memory)
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="memories-form">
-        <div className="memories-cta">
-          Please add a memory!
-        </div>
+    <div className="memories-form">
+      <div className="memories-cta">
+        Please add a memory!
+      </div>
+      <form onSubmit={handleSubmit}>
         <input
           className="memories-form-name"
           placeholder="Name"
           type="text"
-          name="name"
           value={memory.name}
           onChange={handleChange}
           required
         />
-        <textarea
+        <input
           className="memories-form-text"
           id="MemoryFormText"
-          placeholder="Share your memory here..."
+          placeholder="Memory"
           type="text"
-          name="text"
           value={memory.text}
           onChange={handleChange}
           required
@@ -53,7 +63,7 @@ export default function MemoriesForm() {
           type="submit"
           value="Submit"
         />
-      </div>
-    </form>
+      </form>
+    </div>
   )
 }

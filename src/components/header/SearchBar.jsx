@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function SearchBar({ date, setDate }) {
+export default function SearchBar({ date, setDate, entry, setEntry }) {
 
   function handleChange(e) {
-    setDate(e.target.value)
+    setEntry(e.target.value)
+  }
+
+  function handleSubmit() {
+    setDate(entry)
   }
 
   return (
@@ -11,13 +15,14 @@ export default function SearchBar({ date, setDate }) {
       <input
         className="search-bar"
         type="text"
-        value={date}
+        defaultValue={date}
         onChange={handleChange}
         placeholder="Enter Date (MM-DD-YYYY)"
       />
       <input
         className="button"
         type="submit"
+        onChange={handleSubmit}
         value="Search"
       />
     </div >
