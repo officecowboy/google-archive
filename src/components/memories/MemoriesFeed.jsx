@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Memory from './Memory';
 import { getMemories } from "../../services/memories.js";
 
-export default function MemoriesFeed(props) {
+export default function MemoriesFeed({ date }) {
   const [memories, setMemories] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function MemoriesFeed(props) {
 
   return (
     <div className="memories-feed">
-      <div className="banner">Memories from 05-08-2003</div>
+      <div className="banner">Memories from {date}</div>
       <div className="memories-list">
         {
           memories.length && memories.map((memory) => (

@@ -8,7 +8,7 @@ export default function Memory({ memory }) {
       <p className="memory-text">{memory.text}</p>
       <div className="memory-info">
         <p className="memory-name">
-          {memory.name}
+          Posted by {memory.name}
         </p>
         <div className="memory-crud">
           <p onClick={() => {
