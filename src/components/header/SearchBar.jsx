@@ -17,7 +17,7 @@ export default function SearchBar({ date, setDate, entry, setEntry }) {
         type="text"
         defaultValue={date}
         onChange={handleChange}
-        placeholder="Enter Date (MM-DD-YYYY)"
+        placeholder="Enter Date (DD-MM-YYYY)"
       />
       <input
         className="button"
