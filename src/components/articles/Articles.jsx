@@ -15,13 +15,6 @@ export default function Articles() {
         <Article />
         <Article />
         <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
       </div>
     </div>
   )
