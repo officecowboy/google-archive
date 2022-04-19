@@ -17,11 +17,12 @@ export default function MemoriesFeed({ memories, setToggle, date, dateSort, setD
     <div className="memories-feed">
       <div className="banner">Memories from {date}</div>
       <div className="memories-list">
-        {/* <Warning /> */}
-        {
-          memories.length && memories.map((memory) => (
+        {memories.length ?
+          memories.map((memory) => (
             <Memory setToggle={setToggle} key={memory._id} memoryData={memory} />
           ))
+          :
+          <Warning />
         }
       </div>
     </div>
