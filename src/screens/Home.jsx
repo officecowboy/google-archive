@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../components/header/Logo';
-import SearchBar from '../components/header/SearchBar';
+import Logo from '../components/Logo';
+import SearchBar from '../components/SearchBar';
 import { useNavigate } from 'react-router-dom';
 
 

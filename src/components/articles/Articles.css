@@ -1,5 +1,11 @@
-.articles {
+.right-column {
   padding-left: 20px;
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  height: 130px;
 }
 
 .article>p {

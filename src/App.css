@@ -26,28 +26,8 @@ p {
   align-items: center;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-}
-
-.logo-search {
-  display: flex;
-  flex-direction: row;
-  width: 800px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo {
   color: grey;
-}
-
-.banner-gif {
-  margin-right: 20px;
 }
 
 .logo-image {
@@ -57,7 +37,7 @@ p {
 
 .search-bar {
   padding: 5px;
-  width: 300px;
+  width: 220px;
   margin-right: 5px;
   background: #FFFFFF;
   border-style: solid;
