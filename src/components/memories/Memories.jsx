@@ -41,7 +41,10 @@ export default function Memories({ date, dateSort, setDateSort, dateArray, setDa
           />
           <MemoriesForm setToggle={setToggle} />
         </div>
-        <img alt="" className="memories-gif" src={require("../../assets/panasonic-1998.gif")}></img>
+        <div className="tags">
+          <img alt="" src={require("../../assets/macromedia-2000.gif")}></img>
+          <img alt="" src={require("../../assets/netscape-1996.gif")}></img>
+        </div>
       </div>
     </div>
   )
