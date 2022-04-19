@@ -5,6 +5,7 @@ import { getMemories } from "../../services/memories.js";
 
 export default function MemoriesFeed({ date, dateSort, setDateSort, dateArray, setDateArray }) {
   const [memories, setMemories] = useState([]);
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const fetchMemories = async () => {
@@ -13,7 +14,7 @@ export default function MemoriesFeed({ date, dateSort, setDateSort, dateArray, s
     }
 
     fetchMemories()
-  }, [memories])
+  }, [toggle])
 
   useEffect(() => {
     console.log(date)
@@ -25,14 +26,14 @@ export default function MemoriesFeed({ date, dateSort, setDateSort, dateArray, s
 
   return (
     <div className="memories-feed">
-      <div className="banner">Memories from {dateSort}</div>
+      <div className="banner">Memories from {date}</div>
       <div className="memories-list">
-        <Warning />
-        {/* {
+        {/* <Warning /> */}
+        {
           memories.length && memories.map((memory) => (
-            <Memory memory={memory} key={memory._id} />
+            <Memory setToggle={setToggle} key={memory._id} memoryData={memory} />
           ))
-        } */}
+        }
       </div>
     </div>
   )
