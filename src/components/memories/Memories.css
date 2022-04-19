@@ -42,7 +42,7 @@
 }
 
 .memories-list {
-  height: 400px;
+  height: 340px;
   overflow-y: scroll;
   padding: 0 10px;
   border-bottom: solid 1px black;

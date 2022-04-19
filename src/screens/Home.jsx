@@ -12,17 +12,17 @@ export default function Home({ handleChange, dateEntry, setDate, dateSort, setDa
         <div className="home-search">
           <Logo />
           <SearchBar
-              //onChange={handleChange}
-              date={dateEntry}
-              setDate={setDate}
-              dateSort={dateSort}
-              setDateSort={setDateSort}
-              dateArray={dateArray}
-              setDateArray={setDateArray}
-            />
+            //onChange={handleChange}
+            date={dateEntry}
+            setDate={setDate}
+            dateSort={dateSort}
+            setDateSort={setDateSort}
+            dateArray={dateArray}
+            setDateArray={setDateArray}
+          />
         </div>
         <div className="about">
-          <p className="lead-about">Did you know that Google was originally called <a href="http://blogoscoped.com/archive/2007-12-28-n47.html" target="blank">Backrub</a>? In this digital archive, we trace the history of technology from the new millennium to the present.</p>
+          <p className="lead-about">Did you know that Google was originally called <a href="http://blogoscoped.com/archive/2007-12-28-n47.html" target="blank">Backrub</a>? Here on <a href="https://backrub.wiki/" target="blank">backrub.wiki</a>, we trace the history of technology from the new millennium to the present.</p>
           <p>Enter a date from January 1, 2000 to today to view:</p>
           <ol>
             <li>That day's <a href="https://www.google.com/doodles" target="blank">Google Doodle</a>. If there’s no doodle to display, you’ll see the Google logo at that time.</li>

@@ -20,9 +20,6 @@ export default function MemoriesForm({ setToggle }) {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const response = await createMemory(memory)
-    const submitted = this.state.memory
-    this.props.onSearchTermChange(memory)
-    this.setMemory({ memory.name: "" });
     setToggle(prev => !prev)
   }
 
