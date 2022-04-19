@@ -4,32 +4,22 @@ import SearchBar from '../components/SearchBar';
 import { useNavigate } from 'react-router-dom';
 
 
-export default function Home({ date, setDate, dateSort, setDateSort, dateArray, setDateArray }) {
-
-  let navigate = useNavigate()
-
-  const handleSubmit = async (event) => {
-    event.preventDefault()
-
-    await
-      navigate("/search", { replace: true })
-  }
+export default function Home({ handleChange, dateEntry, setDate, dateSort, setDateSort, dateArray, setDateArray }) {
 
   return (
     <div className="home-search-container">
       <div className="home-content">
         <div className="home-search">
           <Logo />
-          <form onSubmit={handleSubmit}>
-            <SearchBar
-              date={date}
+          <SearchBar
+              //onChange={handleChange}
+              date={dateEntry}
               setDate={setDate}
               dateSort={dateSort}
               setDateSort={setDateSort}
               dateArray={dateArray}
               setDateArray={setDateArray}
             />
-          </form>
         </div>
         <div className="about">
           <p className="lead-about">Did you know that Google was originally called <a href="http://blogoscoped.com/archive/2007-12-28-n47.html" target="blank">Backrub</a>? In this digital archive, we trace the history of technology from the new millennium to the present.</p>
