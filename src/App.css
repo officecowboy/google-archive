@@ -42,7 +42,7 @@ textarea {
 .about-container {
   padding: 0 20px;
   font-size: 18px;
-  max-width: 740px;
+  max-width: 770px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +50,7 @@ textarea {
 
 .about>p {
   font-size: 18px;
+  line-height: 1.3;
 }
 
 .logo {
