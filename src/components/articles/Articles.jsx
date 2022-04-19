@@ -14,9 +14,11 @@ export default function Articles({ dateEntry, setDate, date }) {
       </div>
       <div className="articles">
         <Results date={date} />
-        <Article />
-        <Article />
-        <Article />
+        <div class="articles-list">
+          <Article />
+          <Article />
+          <Article />
+        </div>
       </div>
     </div>
   )
