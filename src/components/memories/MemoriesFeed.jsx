@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Memory from './Memory';
+import Warning from '../Warning';
 import { getMemories } from "../../services/memories.js";
 
 export default function MemoriesFeed({ date, dateSort, setDateSort, dateArray, setDateArray }) {
@@ -26,11 +27,12 @@ export default function MemoriesFeed({ date, dateSort, setDateSort, dateArray, s
     <div className="memories-feed">
       <div className="banner">Memories from {dateSort}</div>
       <div className="memories-list">
-        {
+        <Warning />
+        {/* {
           memories.length && memories.map((memory) => (
             <Memory memory={memory} key={memory._id} />
           ))
-        }
+        } */}
       </div>
     </div>
   )
