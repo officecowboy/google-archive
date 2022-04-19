@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Memory from './Memory';
 import { getMemories } from "../../services/memories.js";
 
-export default function MemoriesFeed({ date }) {
+export default function MemoriesFeed({ date, dateSort, setDateSort, dateArray, setDateArray }) {
   const [memories, setMemories] = useState([]);
 
   useEffect(() => {
@@ -14,13 +14,21 @@ export default function MemoriesFeed({ date }) {
     fetchMemories()
   }, [memories])
 
+  useEffect(() => {
+    console.log(date)
+    setDateArray(date.split("-"))
+    console.log(dateArray)
+    setDateSort(dateArray[1] + "-" + dateArray[2] + "-" + dateArray[0])
+    console.log(dateSort)
+  }, [date])
+
   return (
     <div className="memories-feed">
-      <div className="banner">Memories from {date}</div>
+      <div className="banner">Memories from {dateSort}</div>
       <div className="memories-list">
         {
           memories.length && memories.map((memory) => (
-            <Memory memory={memory} />
+            <Memory memory={memory} key={memory._id} />
           ))
         }
       </div>
