@@ -13,9 +13,11 @@ function Search({ date, setDate, dateEntry, setDateEntry, dateSort, setDateSort,
           setDateSort={setDateSort}
           dateArray={dateArray}
           setDateArray={setDateArray}
+          dateEntry={dateEntry}
+          setDateEntry={setDateEntry}
         />
         <Articles
-          date={dateEntry}
+          date={date}
           setDate={setDate}
           dateEntry={dateEntry}
           setDateEntry={setDateEntry}

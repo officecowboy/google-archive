@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { getMemories } from '../../services/memories';
 import './Memories.css';
 
-export default function Memories({ date, dateSort, setDateSort, dateArray, setDateArray }) {
+export default function Memories({ date, dateSort, setDateSort, dateArray, setDateArray, dateEntry, setDateEntry }) {
 
   const [memories, setMemories] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -36,6 +36,8 @@ export default function Memories({ date, dateSort, setDateSort, dateArray, setDa
             setDateSort={setDateSort}
             dateArray={dateArray}
             setDateArray={setDateArray}
+            dateEntry={dateEntry}
+            setDateEntry={setDateEntry}
           />
           <MemoriesForm setToggle={setToggle} />
         </div>

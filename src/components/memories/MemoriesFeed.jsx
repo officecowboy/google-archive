@@ -3,7 +3,7 @@ import Memory from './Memory';
 import Warning from '../Warning';
 import { getMemories } from "../../services/memories.js";
 
-export default function MemoriesFeed({ memories, setToggle, date, dateSort, setDateSort, dateArray, setDateArray }) {
+export default function MemoriesFeed({ memories, setToggle, date, dateSort, setDateSort, dateArray, setDateArray, dateEntry }) {
 
   useEffect(() => {
     console.log(date)

@@ -4,7 +4,7 @@ import Article from './Article';
 import SearchBar from '../SearchBar';
 import './Articles.css';
 
-export default function Articles({ dateEntry, setDate }) {
+export default function Articles({ dateEntry, setDate, date }) {
   return (
     <div className="right-column">
       <div className="searchbar-container">
@@ -13,7 +13,7 @@ export default function Articles({ dateEntry, setDate }) {
           setDate={setDate} />
       </div>
       <div className="articles">
-        <Results />
+        <Results date={date} />
         <Article />
         <Article />
         <Article />
