@@ -39,12 +39,13 @@ export default function Memory({ memoryData, setToggle }) {
             onChange={handleChange}
           />
           <div className="memory-crud">
-            <p onClick={async () => {
+            <button className="memory-button" onClick={handleSubmit}>Update</button>
+            <button className="memory-button" onClick={async () => {
               await deleteMemory(memoryData._id)
               setToggle(prev => !prev)
             }}>
               Delete
-            </p>
+            </button>
           </div>
         </div>
       </form>
