@@ -42,8 +42,8 @@ export default function Memories({ date, dateSort, setDateSort, dateArray, setDa
           <MemoriesForm setToggle={setToggle} />
         </div>
         <div className="tags">
-          <img alt="" src={require("../../assets/macromedia-2000.gif")}></img>
-          <img alt="" src={require("../../assets/netscape-1996.gif")}></img>
+          <img alt="" className="flash" src={require("../../assets/macromedia-2000.gif")}></img>
+          <img alt="" src={require("../../assets/quicktime-4-0-2000.gif")}></img>
         </div>
       </div>
     </div>
