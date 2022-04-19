@@ -193,5 +193,8 @@ textarea {
 }
 
 .memories-gif {
-  padding: 0 25px 20px 10px;
+  padding-bottom: 15px;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
 }
