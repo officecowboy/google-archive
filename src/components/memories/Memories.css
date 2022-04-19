@@ -192,9 +192,10 @@ textarea {
   box-sizing: border-box;
 }
 
-.memories-gif {
-  padding-bottom: 15px;
-  display: block;
-  margin: 0 auto;
-  width: 90%;
+.tags {
+  padding: 15px 30px;
+  display: flex;
+  width: 81%;
+  flex-direction: row;
+  justify-content: space-between;
 }
