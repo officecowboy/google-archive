@@ -3,18 +3,15 @@ import Memory from './Memory';
 import Warning from '../Warning';
 import { getMemories } from "../../services/memories.js";
 
-export default function MemoriesFeed({ date, dateSort, setDateSort, dateArray, setDateArray }) {
-  const [memories, setMemories] = useState([]);
-  const [toggle, setToggle] = useState(false);
+export default function MemoriesFeed({ memories, setToggle, date, dateSort, setDateSort, dateArray, setDateArray }) {
+  // const [memories, setMemories] = useState([]);
+  // const [toggle, setToggle] = useState(false);
 
-  useEffect(() => {
-    const fetchMemories = async () => {
-      const response = await getMemories()
-      setMemories(response)
-    }
-
-    fetchMemories()
-  }, [toggle])
+  // useEffect(() => {
+  //   const fetchMemories = async () => {
+  //     const response = await getMemories()
+  //     setMemories(response)
+  //   }
 
   useEffect(() => {
     console.log(date)
