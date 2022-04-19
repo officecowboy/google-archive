@@ -4,11 +4,11 @@ import Article from './Article';
 import SearchBar from '../SearchBar';
 import './Articles.css';
 
-export default function Articles() {
+export default function Articles({ date, setDate }) {
   return (
     <div className="right-column">
       <div className="searchbar-container">
-        <SearchBar />
+        <SearchBar date={date} setDate={setDate} />
       </div>
       <div className="articles">
         <Results />

@@ -14,7 +14,10 @@ function Search({ date, setDate, dateSort, setDateSort, dateArray, setDateArray 
           dateArray={dateArray}
           setDateArray={setDateArray}
         />
-        <Articles />
+        <Articles
+          date={date}
+          setDate={setDate}
+        />
       </div>
     </div>
   );
