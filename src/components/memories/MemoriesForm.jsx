@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { createMemory } from '../../services/memories'
 
 
-export default function MemoriesForm() {
+export default function MemoriesForm({setToggle}) {
   const [memory, setMemory] = useState({
     name: "",
     text: "",
@@ -21,6 +21,7 @@ export default function MemoriesForm() {
     event.preventDefault()
     // setMemory(event.target.value)
     const response = await createMemory(memory)
+    setToggle(prev => !prev)
   }
 
   return (
