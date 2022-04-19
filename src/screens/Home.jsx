@@ -23,7 +23,7 @@ export default function Home({ handleChange, dateEntry, setDate, dateSort, setDa
         </div>
         <div className="about-container">
           <div className="about">
-            <p className="lead-about">Did you know that Google was originally called <a href="http://blogoscoped.com/archive/2007-12-28-n47.html" target="blank">Backrub</a>?<br /> Here on <a href="https://backrub.wiki/" target="blank">backrub.wiki</a>, we trace the history of technology from the new millennium to the present.</p>
+            <p className="lead-about">Did you know that Google was originally named <a href="http://blogoscoped.com/archive/2007-12-28-n47.html" target="blank">Backrub</a>?<br /> Here on <a href="https://backrub.wiki/" target="blank">backrub.wiki</a>, we trace the history of technology from the new millennium to the present.</p>
             <p>Enter a date from January 1, 2000 - April 1, 2022 to view:</p>
             <ol>
               <li>That day's <a href="https://www.google.com/doodles" target="blank">Google Doodle</a>. If there’s no doodle, you’ll see the Google logo at that time.</li>
