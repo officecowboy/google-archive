@@ -2,13 +2,11 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from 'react-router-dom'
 import { updateMemory, getMemory } from "../../services/memories"
 
+
 export default function MemoryEdit() {
   const [memory, setMemory] = useState({
-    _id: "",
     name: "",
     text: "",
-    createdAt: "",
-    updatedAt: "",
   })
   
   const { id } = useParams()

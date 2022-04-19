@@ -1,40 +1,56 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import { deleteMemory, getMemory, updateMemory } from '../../services/memories';
-import MemoriesFeed from "./MemoriesFeed"
+import React, { useState, useEffect } from 'react';
+import { deleteMemory, updateMemory } from '../../services/memories';
 
-export default function Memory({memory}) {
-  // const [memory, setMemory] = useState({})
-  // let { id } = useParams()
+export default function Memory({ memoryData, setToggle }) {
+  const [memory, setMemory] = useState({
+    name: memoryData.name,
+    text: memoryData.text,
+  })
 
-  // useEffect(() => {
-  //   const fetchMemory = async () => {
-  //     let aMemory = await getMemory(id)
-  //     setMemory(aMemory)
-  //   }
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setMemory({
+      ...memory,
+      [name]: value,
+    })
+  }
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    await updateMemory(memoryData._id, memory)
+  }
 
-  //   fetchMemory()
-  // }, [id])
-
-  return (
-    <div className="memory">
-      <p className="memory-text">{memory.text}</p>
-      <div className="memory-info">
-        <p className="memory-name">
-          {memory.name}
-        </p>
-        <div className="memory-crud">
-          <p onClick={() => {
-            updateMemory(memory._id)
-          }}>Edit</p>
-          <p onClick={() => {
-            deleteMemory(memory._id)
-          }}>
-            Delete
-          </p>
+    return (
+      <div className="memory">
+        <form onSubmit={handleSubmit}>
+          <div className='memory-para'>
+            <input
+            className="memory-text"
+            type="text"
+            name="text"
+            value={memory.text}
+            onChange={handleChange}
+            />
+          </div>
+        <div className="memory-info">
+          <input
+              className="memory-name"
+              type="text"
+              name="name"
+              value={memory.name}
+              onChange={handleChange}
+          />
+          <div className="memory-crud">
+              <button type="submit" >Edit</button>
+            <p onClick={async () => {
+                await deleteMemory(memoryData._id)
+                setToggle(prev => !prev)
+              }}>
+              Delete
+            </p>
+          </div>
         </div>
+        </form>
       </div>
-    </div>
-  )
-}
+    )
+  }

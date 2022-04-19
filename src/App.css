@@ -68,3 +68,16 @@ p {
   display: flex;
   flex-direction: row;
 }
+
+.memory-name, .memory-text{
+  background-color: transparent;
+  border: 0;
+}
+
+.memory-text{
+  font-size: 18px;
+}
+
+.memory-para{
+  padding: 2px;
+}

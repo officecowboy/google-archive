@@ -5,6 +5,7 @@ import { getMemories } from "../../services/memories.js";
 
 export default function MemoriesFeed(props) {
   const [memories, setMemories] = useState([]);
+  const [toggle, setToggle] = useState(false)
   
   useEffect(() => {
     const fetchMemories = async () => {
@@ -13,7 +14,7 @@ export default function MemoriesFeed(props) {
     }
 
     fetchMemories()
-  }, [memories])
+  }, [toggle])
 
   return (
     <div className="memories-feed">
@@ -21,7 +22,7 @@ export default function MemoriesFeed(props) {
       <div className="memories-list">
         {
           memories.length && memories.map((memory) => (
-            <Memory memory={memory}/>
+            <Memory setToggle={setToggle} key={memory._id} memoryData={memory}/>
           ))
         }
       </div>
