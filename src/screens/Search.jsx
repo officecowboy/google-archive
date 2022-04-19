@@ -2,7 +2,7 @@ import '../App.css';
 import Articles from '../components/articles/Articles';
 import Memories from '../components/memories/Memories';
 
-function Search({ date, setDate, dateSort, setDateSort, dateArray, setDateArray }) {
+function Search({ date, setDate, dateEntry, setDateEntry, dateSort, setDateSort, dateArray, setDateArray }) {
   return (
     <div className="App">
       <div className="main-content">
@@ -15,8 +15,10 @@ function Search({ date, setDate, dateSort, setDateSort, dateArray, setDateArray 
           setDateArray={setDateArray}
         />
         <Articles
-          date={date}
+          date={dateEntry}
           setDate={setDate}
+          dateEntry={dateEntry}
+          setDateEntry={setDateEntry}
         />
       </div>
     </div>

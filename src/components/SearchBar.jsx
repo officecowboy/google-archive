@@ -9,7 +9,7 @@ export default function SearchBar({ date, setDate }) {
   const handleSubmit = async (event) => {
     event.preventDefault()
     await setDate(dateEntry)
-      navigate("/search", { replace: true })
+    navigate("/search", { replace: true })
   }
 
   function handleChange(e) {
@@ -22,7 +22,7 @@ export default function SearchBar({ date, setDate }) {
         <input
           className="search-bar"
           type="date"
-          value={date}
+          value={dateEntry}
           onChange={handleChange}
         />
         <input

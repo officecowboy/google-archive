@@ -8,7 +8,9 @@ export default function Articles({ dateEntry, setDate }) {
   return (
     <div className="right-column">
       <div className="searchbar-container">
-        <SearchBar date={dateEntry} setDate={setDate} />
+        <SearchBar
+          date={dateEntry}
+          setDate={setDate} />
       </div>
       <div className="articles">
         <Results />
