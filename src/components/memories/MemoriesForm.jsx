@@ -19,7 +19,6 @@ export default function MemoriesForm({ setToggle }) {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    // setMemory(event.target.value)
     const response = await createMemory(memory)
     setToggle(prev => !prev)
   }
