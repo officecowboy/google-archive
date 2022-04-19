@@ -24,6 +24,7 @@ export default function SearchBar({ date, setDate }) {
           type="date"
           value={dateEntry}
           onChange={handleChange}
+          required
         />
         <input
           onSubmit={handleSubmit}
