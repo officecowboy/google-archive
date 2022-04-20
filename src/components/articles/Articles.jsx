@@ -15,7 +15,6 @@ export default function Articles({date, dateEntry, setDate }) {
     const fetchArticles = async () => {
       const response = await getArticles()
       setArticles(response)
-      console.log(response)
     }
 
     fetchArticles()
@@ -30,7 +29,7 @@ export default function Articles({date, dateEntry, setDate }) {
           setDate={setDate} />
       </div>
       <div className="articles">
-        <Results />
+        <Results date={date}/>
         <ArticlesFeed
           articles={articles}
           setToggle={setToggle}

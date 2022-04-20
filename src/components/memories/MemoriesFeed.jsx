@@ -15,12 +15,12 @@ export default function MemoriesFeed({ memories, setToggle, date, dateSort, setD
 
   return (
     <div className="memories-feed">
-      <div className="banner">Memories from {date}</div>
+      <div className="banner">Memories</div>
       <div className="memories-list">
         {/* <Warning /> */}
         {
           memories.length && memories.map((memory) => (
-            memory.createdAt.includes(date) &&
+            // memory.createdAt.includes(date) &&
             <Memory setToggle={setToggle} key={memory._id} memoryData={memory} />
           ))
         }
