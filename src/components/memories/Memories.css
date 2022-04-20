@@ -25,6 +25,7 @@
 .left-column {
   display: flex;
   flex-direction: column;
+  width: 525px;
 }
 
 .warning-container {

@@ -33,7 +33,7 @@ export default function Memory({ memoryData, setToggle }) {
         <div className="memory-info">
           <input
             className="memory-name"
-            type="text"
+            type="date"
             name="name"
             value={memory.name}
             onChange={handleChange}

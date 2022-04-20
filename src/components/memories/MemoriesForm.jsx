@@ -31,8 +31,8 @@ export default function MemoriesForm({ setToggle }) {
         </div>
         <input
           className="memories-form-name"
-          placeholder="Name"
-          type="text"
+          placeholder=""
+          type="date"
           name="name"
           value={memory.name}
           onChange={handleChange}
