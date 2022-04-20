@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function Logo({ doodles }) {
 
-  const [randomDoodle, setRandomDoodle] = useState("//www.google.com/logos/2000/doodle_alien3.gif")
+  const [randomDoodle, setRandomDoodle] = useState("https://www.google.com/logos/2013/500th_anniversary_of_the_piri_reis_map-1696005-hp.jpg")
 
   function randomUrl() {
     setRandomDoodle(doodles[Math.floor(Math.random() * doodles.length)].url)
