@@ -4,7 +4,26 @@ import Article from './Article';
 import SearchBar from '../SearchBar';
 import './Articles.css';
 
+<<<<<<< Updated upstream
 export default function Articles({ dateEntry, setDate }) {
+=======
+export default function Articles({ date, dateEntry, setDate }) {
+
+  const [articles, setArticles] = useState([]);
+  const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      const response = await getArticles()
+      setArticles(response)
+      console.log(response)
+    }
+
+    fetchArticles()
+  }, [toggle])
+
+
+>>>>>>> Stashed changes
   return (
     <div className="right-column">
       <div className="searchbar-container">

@@ -7,11 +7,11 @@ export default function MemoriesFeed({ memories, setToggle, date, dateSort, setD
 
   useEffect(() => {
     console.log(date)
-    setDateArray(date.split("-"))
-    console.log(dateArray)
-    setDateSort(dateArray[1] + "-" + dateArray[2] + "-" + dateArray[0])
-    console.log(dateSort)
-  }, [date])
+    // setDateArray(date.split("-"))
+    // console.log(dateArray)
+    // setDateSort(dateArray[1] + "-" + dateArray[2] + "-" + dateArray[0])
+    // console.log(dateSort)
+  }, [setToggle])
 
   return (
     <div className="memories-feed">
@@ -20,6 +20,7 @@ export default function MemoriesFeed({ memories, setToggle, date, dateSort, setD
         {/* <Warning /> */}
         {
           memories.length && memories.map((memory) => (
+            memory.createdAt.includes(date) &&
             <Memory setToggle={setToggle} key={memory._id} memoryData={memory} />
           ))
         }
