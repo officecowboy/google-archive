@@ -1,16 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
 
-export default function Article() {
+export default function Article({ article }) {
+  // const [currentArticle, setCurrentArticle] = useState({
+  //   headline: article.headline,
+  //   abstract: article.abstract,
+  //   web_url: article.web_url
+  // })
+
   return (
     <div className="article">
-      <a href="https://www.nytimes.com/2000/01/01/technology/visions-technology-will-dust-survive-and-other-nagging-questions.html" className="headline">
-        Will Dust Survive? And Other Nagging Questions
+      <a href={`${article.web_url}`} className="headline">
+        {article.headline}
       </a>
       <p className="abstract">
-        Henry Fountain article on whether in the century ahead science will succeed in reviving bodies frozen in liquid nitrogen, colonizing outer space, eliminating dust mites, improving fabrics used in clothing and making it impossible to be alone; photos (M)
+        {article.abstract}
       </p>
-      <a href="https://www.nytimes.com/2000/01/01/technology/visions-technology-will-dust-survive-and-other-nagging-questions.html" className="link">
-        https://www.nytimes.com/2000/01/01/technology/visions-technology-will-dust-survive-and-other-nagging-questions.html
+      <a href={`${article.web_url}`} className="link">
+        {article.web_url}
       </a>
     </div>
   )
