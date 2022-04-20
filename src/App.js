@@ -25,15 +25,15 @@ function App() {
     fetchArticles()
   }, []) */
 
-  /* useEffect(() => {
+  useEffect(() => {
     const fetchDoodles = async () => {
       const response = await getDoodles()
       setDoodles(response)
-      console.log(doodles)
+      console.log(response)
     }
 
     fetchDoodles()
-  }, []) */
+  }, [])
 
   return (
     <div className="App">
