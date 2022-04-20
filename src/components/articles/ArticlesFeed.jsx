@@ -7,7 +7,7 @@ export default function ArticlesFeed({ articles, setToggle, date, dateArray }) {
     <div>
       {
         articles.map((article) => (
-          article.pub_date.includes('2010-05-17') &&
+          article.pub_date.includes(`${date}`) &&
           <Article article={article} key={article._id} />
         ))
       }

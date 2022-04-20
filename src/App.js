@@ -2,13 +2,25 @@ import './App.css';
 import Home from './screens/Home';
 import Search from './screens/Search';
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { getArticles } from './services/articles';
 
 function App() {
 
   const [date, setDate] = useState("");
   const [dateArray, setDateArray] = useState([]);
   const [dateSort, setDateSort] = useState("");
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      const response = await getArticles()
+      setArticles(response)
+      console.log(response)
+    }
+
+    fetchArticles()
+  }, [])
 
   return (
     <div className="App">
@@ -25,6 +37,7 @@ function App() {
         } />
         <Route path="/search" element={
           <Search
+            articles={articles}
             date={date}
             setDate={setDate}
             dateSort={dateSort}

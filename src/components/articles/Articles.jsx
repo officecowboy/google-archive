@@ -3,23 +3,11 @@ import Results from './Results';
 import Article from './Article';
 import ArticlesFeed from './ArticlesFeed';
 import SearchBar from '../SearchBar';
-import { getArticles } from '../../services/articles'
 import './Articles.css';
 
-export default function Articles({ date, dateEntry, setDate }) {
+export default function Articles({ articles, date, dateEntry, setDate }) {
 
-  const [articles, setArticles] = useState([]);
   const [toggle, setToggle] = useState(false);
-
-  useEffect(() => {
-    const fetchArticles = async () => {
-      const response = await getArticles()
-      setArticles(response)
-      console.log(response)
-    }
-
-    fetchArticles()
-  }, [toggle])
 
 
   return (
