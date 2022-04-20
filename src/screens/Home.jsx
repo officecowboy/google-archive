@@ -27,7 +27,7 @@ export default function Home({ doodles, handleChange, dateEntry, setDate, dateSo
             <ol>
               <li>Enter a date from January 1, 2000 - April 1, 2022 to view <a href="https://www.nytimes.com/section/technology" target="blank">The New York Times</a> articles published in the Technology Section on that date.</li>
               <li>Click on the Google logo to load a random <a href="https://www.google.com/doodles" target="blank">Google Doodle</a> from the past 20 years.</li>
-              <li>Add to our user-generated catalog of memories!</li>
+              <li>Add your own memories on the search page!</li>
             </ol>
           </div>
         </div>
