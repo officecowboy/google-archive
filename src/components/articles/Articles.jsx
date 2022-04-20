@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Results from './Results';
 import Article from './Article';
+import ArticlesFeed from './ArticlesFeed';
 import SearchBar from '../SearchBar';
+import { getArticles } from '../../services/articles'
 import './Articles.css';
 
-<<<<<<< Updated upstream
-export default function Articles({ dateEntry, setDate }) {
-=======
-export default function Articles({ date, dateEntry, setDate }) {
+export default function Articles({date, dateEntry, setDate }) {
 
   const [articles, setArticles] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -23,7 +22,6 @@ export default function Articles({ date, dateEntry, setDate }) {
   }, [toggle])
 
 
->>>>>>> Stashed changes
   return (
     <div className="right-column">
       <div className="searchbar-container">
@@ -33,9 +31,11 @@ export default function Articles({ date, dateEntry, setDate }) {
       </div>
       <div className="articles">
         <Results />
-        <Article />
-        <Article />
-        <Article />
+        <ArticlesFeed
+          articles={articles}
+          setToggle={setToggle}
+          date={date}
+        />
       </div>
     </div>
   )
