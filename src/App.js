@@ -15,7 +15,7 @@ function App() {
   const [articles, setArticles] = useState([]);
   const [doodles, setDoodles] = useState([]);
 
-  /* useEffect(() => {
+  useEffect(() => {
     const fetchArticles = async () => {
       const response = await getArticles()
       setArticles(response)
@@ -23,7 +23,7 @@ function App() {
     }
 
     fetchArticles()
-  }, []) */
+  }, [])
 
   useEffect(() => {
     const fetchDoodles = async () => {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let apiUrl = "https://back-end-articles.herokuapp.com/api";
+let apiUrl = "https://google-archive.herokuapp.com/api";
 
 // const apiUrls = {
 //   production: "https://back-end-articles.herokuapp.com/api",
