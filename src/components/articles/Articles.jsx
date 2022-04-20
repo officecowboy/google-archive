@@ -4,6 +4,7 @@ import Article from './Article';
 import ArticlesFeed from './ArticlesFeed';
 import SearchBar from '../SearchBar';
 import './Articles.css';
+import { Link } from 'react-router-dom';
 
 export default function Articles({ articles, date, dateEntry, setDate }) {
 
@@ -13,9 +14,19 @@ export default function Articles({ articles, date, dateEntry, setDate }) {
   return (
     <div className="right-column">
       <div className="searchbar-container">
-        <SearchBar
-          date={dateEntry}
-          setDate={setDate} />
+        <div className="searchbar-container-2">
+          <SearchBar
+            date={dateEntry}
+            setDate={setDate} />
+          <div className="search-links">
+            <Link to="/"><div className="search-link">
+              Return Home
+            </div></Link>
+            <div className="search-link">
+              <a href="https://github.com/officecowboy/google-archive" target="blank">View Source</a>
+            </div>
+          </div>
+        </div>
         <img alt="" className="banner-gif" src={require("../../assets/mac-mall-1998.gif")}></img>
       </div>
       <div className="articles">

@@ -11,6 +11,22 @@
   height: 160px;
 }
 
+.searchbar-container-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.search-link {
+  font-size: 13px;
+  padding: 1px 8px;
+}
+
 .banner-gif {
   margin-right: 40px;
 }
