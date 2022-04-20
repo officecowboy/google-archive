@@ -18,7 +18,7 @@ export default function Articles({ articles, date, dateEntry, setDate }) {
           setDate={setDate} />
       </div>
       <div className="articles">
-        <Results />
+        <Results date={date} />
         <ArticlesFeed
           articles={articles}
           setToggle={setToggle}
