@@ -194,13 +194,18 @@ textarea {
 }
 
 .tags {
-  padding: 15px 30px;
   display: flex;
-  width: 81%;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding-bottom: 20px;
 }
 
 .flash {
   margin-bottom: 1px;
+  margin-right: 10px;
+}
+
+.quicktime {
+  margin-right: 30px;
 }

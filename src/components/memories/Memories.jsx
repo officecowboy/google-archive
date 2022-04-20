@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { getMemories } from '../../services/memories';
 import './Memories.css';
 
-export default function Memories({ date, dateSort, setDateSort, dateArray, setDateArray, dateEntry, setDateEntry }) {
+export default function Memories({ doodles, date, dateSort, setDateSort, dateArray, setDateArray, dateEntry, setDateEntry }) {
 
   const [memories, setMemories] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -24,7 +24,7 @@ export default function Memories({ date, dateSort, setDateSort, dateArray, setDa
   return (
     <div className="left-column">
       <div className="logo-container">
-        <Logo />
+        <Logo doodles={doodles} />
       </div>
       <div className="memories">
         <div className="memories-form-container">
@@ -43,7 +43,7 @@ export default function Memories({ date, dateSort, setDateSort, dateArray, setDa
         </div>
         <div className="tags">
           <img alt="" className="flash" src={require("../../assets/macromedia-2000.gif")}></img>
-          <img alt="" src={require("../../assets/quicktime-4-0-2000.gif")}></img>
+          <img alt="" className="quicktime" src={require("../../assets/quicktime-4-0-2000.gif")}></img>
         </div>
       </div>
     </div>

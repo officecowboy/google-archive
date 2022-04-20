@@ -7,7 +7,7 @@ export default function ArticlesFeed({ articles, setToggle, date, dateArray }) {
   return (
     <div>
       {
-        articles.length == 44348 ?
+        articles.length == 44348 && date ?
           articles.map((article) => (
             article.pub_date.includes(`${date}`) &&
             <Article article={article} key={article._id} />

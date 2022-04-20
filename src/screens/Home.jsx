@@ -4,13 +4,13 @@ import SearchBar from '../components/SearchBar';
 import { useNavigate } from 'react-router-dom';
 
 
-export default function Home({ handleChange, dateEntry, setDate, dateSort, setDateSort, dateArray, setDateArray }) {
+export default function Home({ doodles, handleChange, dateEntry, setDate, dateSort, setDateSort, dateArray, setDateArray }) {
 
   return (
     <div className="home-search-container">
       <div className="home-content">
         <div className="home-search">
-          <Logo />
+          <Logo doodles={doodles} />
           <SearchBar
             //onChange={handleChange}
             date={dateEntry}
