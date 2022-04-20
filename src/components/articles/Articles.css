@@ -6,7 +6,13 @@
 .searchbar-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
   height: 160px;
+}
+
+.banner-gif {
+  margin-right: 40px;
 }
 
 .article>p {
@@ -68,4 +74,10 @@ h3 {
 .loading-icon {
   max-width: 500px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 1300px) {
+  .banner-gif {
+    display: none;
+  }
 }

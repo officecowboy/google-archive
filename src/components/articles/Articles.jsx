@@ -16,6 +16,7 @@ export default function Articles({ articles, date, dateEntry, setDate }) {
         <SearchBar
           date={dateEntry}
           setDate={setDate} />
+        <img alt="" className="banner-gif" src={require("../../assets/mac-mall-1998.gif")}></img>
       </div>
       <div className="articles">
         <Results date={date} />
