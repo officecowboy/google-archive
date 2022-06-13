@@ -1,12 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
 
 export default function Article({ article }) {
-  // const [currentArticle, setCurrentArticle] = useState({
-  //   headline: article.headline,
-  //   abstract: article.abstract,
-  //   web_url: article.web_url
-  // })
 
   return (
     <div className="article">

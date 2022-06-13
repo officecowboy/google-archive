@@ -92,7 +92,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .banner-gif {
     display: none;
   }
