@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import '../App.css';
 
 export default function Logo({ doodles }) {
 
@@ -14,7 +14,7 @@ export default function Logo({ doodles }) {
   return (
     <div className="logo">
       {
-        doodles.length == 5284 ?
+        doodles.length === 5284 ?
           <img className="logo-image" alt="" src={randomDoodle} onClick={() => randomUrl()} />
           :
           <img className="logo-image" alt="" src={randomDoodle} />

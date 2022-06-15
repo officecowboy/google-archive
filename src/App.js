@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getArticles } from './services/articles';
 import { getDoodles } from './services/doodles';
-import Logo from './components/Logo';
 
 function App() {
 

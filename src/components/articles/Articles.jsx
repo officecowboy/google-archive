@@ -1,20 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Results from './Results';
-import Article from './Article';
 import ArticlesFeed from './ArticlesFeed';
+import Logo from '../Logo';
 import SearchBar from '../SearchBar';
 import './Articles.css';
 import { Link } from 'react-router-dom';
 
-export default function Articles({ articles, date, dateEntry, setDate }) {
+export default function Articles({ doodles, articles, date, dateEntry, setDate }) {
 
-  const [toggle, setToggle] = useState(false);
+  const [setToggle] = useState(false);
 
 
   return (
     <div className="right-column">
       <div className="searchbar-container">
         <div className="searchbar-container-2">
+          <div className="logo-container-mobile">
+            <Logo doodles={doodles} />
+          </div>
           <SearchBar
             date={dateEntry}
             setDate={setDate} />
@@ -23,14 +26,17 @@ export default function Articles({ articles, date, dateEntry, setDate }) {
               Return Home
             </div></Link>
             <div className="search-link">
-              <a href="https://github.com/officecowboy/google-archive" target="blank">View Source</a>
+              <a href="https://github.com/officecowboy/google-archive" target="blank" id="source">View Source</a>
             </div>
           </div>
         </div>
         <img alt="" className="banner-gif" src={require("../../assets/mac-mall-1998.gif")}></img>
       </div>
       <div className="articles">
-        <Results date={date} />
+        <Results
+          date={date}
+          articles={articles}
+        />
         <ArticlesFeed
           articles={articles}
           setToggle={setToggle}

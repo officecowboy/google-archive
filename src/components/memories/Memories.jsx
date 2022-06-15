@@ -5,6 +5,7 @@ import Logo from '../Logo';
 import { useState, useEffect } from 'react';
 import { getMemories } from '../../services/memories';
 import './Memories.css';
+import '../../App.css';
 
 export default function Memories({ doodles, date, dateSort, setDateSort, dateArray, setDateArray, dateEntry, setDateEntry }) {
 

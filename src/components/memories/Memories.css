@@ -11,13 +11,6 @@
   background-color: #3366CC;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-}
-
 .memories-feed {
   max-width: 500px;
 }
@@ -208,4 +201,19 @@ textarea {
 
 .netscape {
   margin-bottom: 2px;
+}
+
+@media (max-width: 700px) {
+  .left-column {
+    width: 100%;
+  }
+
+  .memories {
+    max-width: none;
+    border: none;
+  }
+
+  .memories-feed {
+    max-width: none;
+  }
 }
