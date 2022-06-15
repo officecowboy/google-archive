@@ -5,7 +5,7 @@ import { createMemory } from '../../services/memories'
 
 export default function MemoriesForm({ setToggle }) {
   const [memory, setMemory] = useState({
-    name: "",
+    name: "2000-01-01",
     text: "",
   })
 
@@ -21,6 +21,10 @@ export default function MemoriesForm({ setToggle }) {
     event.preventDefault()
     const response = await createMemory(memory)
     setToggle(prev => !prev)
+    setMemory({
+      name: "2000-01-01",
+      text: "",
+    });
   }
 
   return (
