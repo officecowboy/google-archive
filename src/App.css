@@ -24,7 +24,6 @@ textarea {
 .home-search-container {
   display: flex;
   height: 100vh;
-  min-height: stretch;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -32,7 +31,6 @@ textarea {
 
 .home-search {
   display: flex;
-  height: 200px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -177,6 +175,14 @@ li {
 
   .search-bar {
     padding: 6px;
+  }
+
+  .home-search-container {
+    height: auto;
+  }
+
+  .home-search {
+    padding: 20px;
   }
 
 }
