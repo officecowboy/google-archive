@@ -131,11 +131,13 @@
   background: #FFFFFF;
   border-style: solid;
   border-width: 2px;
+  border-radius: 0px;
   border-left-color: dimgrey;
   border-top-color: dimgrey;
   border-bottom-color: #D7D0C8;
   border-right-color: #D7D0C8;
   box-sizing: border-box;
+  -webkit-appearance: none;
 }
 
 .memories-form-name {

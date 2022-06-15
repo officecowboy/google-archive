@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function SearchBar({ date, setDate }) {
-  const [dateEntry, setDateEntry] = useState("")
+  const [dateEntry, setDateEntry] = useState('2000-01-01')
 
   let navigate = useNavigate()
 
