@@ -11,6 +11,7 @@ export default function Logo({ doodles }) {
     console.log(randomDoodle)
   }
 
+
   return (
     <div className="logo">
       {
